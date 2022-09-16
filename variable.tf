@@ -130,16 +130,16 @@ variable "api_name" {
 
 variable "kms_key_arn" {
   description = "kms arn of the cloud watch log group"
-  type = string
+  type        = string
   default     = ""
 }
 
 variable "retention_in_days" {
   description = "Number of days you want to retain log events in the log group"
-  type = number
+  type        = number
   default     = "30"
 }
-  variable "cloudwatch_name" {
+variable "cloudwatch_name" {
   description = "kms arn of the cloud watch log group"
   default     = "cloudwatch_api"
 }

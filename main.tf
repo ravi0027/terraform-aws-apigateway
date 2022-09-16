@@ -58,7 +58,7 @@ resource "aws_api_gateway_method_settings" "api_gateway_method_settings" {
 }
 resource "aws_cloudwatch_log_group" "cloudwatch_log_group" {
   retention_in_days = var.retention_in_days
-   kms_key_id        = var.kms_key_arn
-   name              = var.cloudwatch_name
+  kms_key_id        = var.kms_key_arn
+  name              = var.cloudwatch_name
 }
 
